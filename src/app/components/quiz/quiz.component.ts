@@ -55,7 +55,7 @@ export class QuizComponent implements OnInit {
       const firstUnanswered = document.querySelector('.is-unanswered');
       if (firstUnanswered) {
         this.intersectionObserver.observe(firstUnanswered);
-        firstUnanswered.scrollIntoView({behavior: 'smooth'});
+        firstUnanswered.scrollIntoView();
       }
     }
   }
