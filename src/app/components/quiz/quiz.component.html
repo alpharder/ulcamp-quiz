@@ -1,0 +1,30 @@
+<div class="quiz">
+  <article class="message is-info">
+    <div class="message-header">
+      <p>Personal Styles</p>
+    </div>
+    <div class="message-body content">
+      <p>Which of these statements best describes your personal style at work?</p>
+      <p>In each pair, check one answer.</p>
+    </div>
+  </article>
+
+  <div class="box buttons"
+       *ngFor="let question of listed_questions"
+       [ngClass]="{'is-unanswered': question.selectedAnswer === undefined}">
+    <button class="button is-fullwidth"
+            (click)="selectAnswer(question, answer)"
+            [ngClass]="{'is-primary': answer === question.selectedAnswer}"
+            *ngFor="let answer of question.question.variants">{{answer.text}}
+    </button>
+  </div>
+</div>
+<nav class="navbar is-fixed-bottom is-black is-quiz">
+  <div class="container">
+    <progress class="progress is-success is-medium" value="{{completion_percentage}}" max="100"></progress>
+    <div class="is-pulled-left">{{answered_question_cnt}} of {{listed_questions.length}} answered</div>
+    <button class="button is-success is-pulled-right" (click)="showResults()">
+      Show my results
+    </button>
+  </div>
+</nav>

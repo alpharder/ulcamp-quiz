@@ -1,0 +1,13 @@
+@import "../node_modules/bulma/css/bulma.min.css";
+
+.buttons .button.is-fullwidth:not(:last-child) {
+  margin-right: 0;
+}
+
+.quiz .button {
+  white-space: initial;
+  height: auto;
+}
+.navbar.is-quiz {
+  padding: 20px;
+}
