@@ -25,7 +25,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/amcharts3/amcharts/amcharts.js",
+              "node_modules/amcharts3/amcharts/xy.js",
+              "node_modules/amcharts3/amcharts/plugins/responsive/responsive.min.js",
+              "node_modules/amcharts3/amcharts/plugins/export/export.min.js"
+            ]
           },
           "configurations": {
             "production": {

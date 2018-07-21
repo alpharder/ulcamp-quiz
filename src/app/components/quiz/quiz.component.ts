@@ -8,12 +8,13 @@ import {AnswerVariant, ListedQuestion, Question, QuestionInfluenceType, QuizResu
   styleUrls: ['./quiz.component.css'],
 })
 export class QuizComponent implements OnInit {
-  questions = QUESTION_LIST;
-  listed_questions: ListedQuestion[];
-  answered_question_cnt = 0;
-  completion_percentage = 0;
-  result_is_available = false;
-  result?: QuizResultImmutable;
+  private readonly questions = QUESTION_LIST;
+  protected readonly listed_questions: ListedQuestion[];
+  protected answered_question_cnt = 0;
+  protected completion_percentage = 0;
+  protected result_is_available = false;
+  protected modal_is_opened = false;
+  protected result?: QuizResultImmutable;
 
   private intersectionObserver: IntersectionObserver;
 
@@ -50,7 +51,7 @@ export class QuizComponent implements OnInit {
 
   showResults() {
     if (this.result_is_available) {
-
+      this.openModal();
     } else {
       const firstUnanswered = document.querySelector('.is-unanswered');
       if (firstUnanswered) {
@@ -58,6 +59,13 @@ export class QuizComponent implements OnInit {
         firstUnanswered.scrollIntoView({behavior: 'smooth'});
       }
     }
+  }
+
+  private openModal() {
+    this.modal_is_opened = true;
+  }
+  private closeModal() {
+    this.modal_is_opened = false;
   }
 
   private updateAnsweredQuestionCnt() {

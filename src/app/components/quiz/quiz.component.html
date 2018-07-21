@@ -1,5 +1,4 @@
 <div class="quiz">
-
   <article class="message is-info">
     <div class="message-header">
       <p>Personal Styles</p>
@@ -23,6 +22,16 @@
     </div>
   </div>
 </div>
+
+
+<div class="modal" [ngClass]="{'is-active': modal_is_opened}">
+  <div class="modal-background"></div>
+  <div class="modal-content quiz-result-modal-body">
+    <app-quiz-result-chart *ngIf="result_is_available" [quiz_result]="result"></app-quiz-result-chart>
+  </div>
+  <button class="modal-close is-large" aria-label="close" (click)="closeModal()"></button>
+</div>
+
 <div class="quiz-stats-bar">
   <div class="container">
     <progress class="progress is-success is-medium" value="{{completion_percentage}}" max="100"></progress>

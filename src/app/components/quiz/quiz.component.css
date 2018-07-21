@@ -13,3 +13,9 @@
   background-color: #0a0a0a;
   color: #fff;
 }
+
+.quiz-result-modal-body {
+  height: 90vh !important;
+  max-height: 600px;
+  max-width: 600px;
+}

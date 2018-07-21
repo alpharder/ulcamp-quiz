@@ -1,4 +1,5 @@
 import {Question, QuestionInfluenceType} from './models/question';
+import {QuadrantFields, SubQuadrantDefinition, SubQuadrantPositionTypes} from './models/result-graph';
 
 export const QUESTION_LIST: Question[] = [
   {
@@ -217,4 +218,66 @@ export const QUESTION_LIST: Question[] = [
       },
     ],
   },
+];
+
+export const QUADRANT_LIST: QuadrantFields[] = [
+  {
+    coords: {
+      x1: -10, x2: 0,
+      y1: 0, y2: 10,
+    },
+    color: '#c55f5c',
+    labelText: 'Analytical',
+    labelColor: '#fff',
+  },
+  {
+    coords: {
+      x1: 0, x2: 10,
+      y1: 0, y2: 10,
+    },
+    color: '#557a95',
+    labelText: 'Driver',
+    labelColor: '#fff',
+  },
+  {
+    coords: {
+      x1: -10, x2: 0,
+      y1: -10, y2: 0,
+    },
+    color: '#e200fe',
+    labelText: 'Amiable',
+    labelColor: '#fff',
+  },
+  {
+    coords: {
+      x1: 0, x2: 10,
+      y1: -10, y2: 0,
+    },
+    color: '#36af4b',
+    labelText: 'Expressive',
+    labelColor: '#fff',
+  }
+];
+
+export const SUBQUADRANT_LIST: SubQuadrantDefinition[] = [
+  {
+    position: SubQuadrantPositionTypes.BL,
+    labelText: 'AM',
+    labelColor: '#fff',
+  },
+  {
+    position: SubQuadrantPositionTypes.TL,
+    labelText: 'AN',
+    labelColor: '#fff',
+  },
+  {
+    position: SubQuadrantPositionTypes.BR,
+    labelText: 'EX',
+    labelColor: '#fff',
+  },
+  {
+    position: SubQuadrantPositionTypes.TR,
+    labelText: 'DR',
+    labelColor: '#fff',
+  }
 ];
