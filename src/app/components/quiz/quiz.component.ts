@@ -9,12 +9,12 @@ import {AnswerVariant, ListedQuestion, Question, QuestionInfluenceType, QuizResu
 })
 export class QuizComponent implements OnInit {
   private readonly questions = QUESTION_LIST;
-  protected readonly listed_questions: ListedQuestion[];
-  protected answered_question_cnt = 0;
-  protected completion_percentage = 0;
-  protected result_is_available = false;
-  protected modal_is_opened = false;
-  protected result?: QuizResultImmutable;
+  readonly listed_questions: ListedQuestion[];
+  answered_question_cnt = 0;
+  completion_percentage = 0;
+  result_is_available = false;
+  modal_is_opened = false;
+  result?: QuizResultImmutable;
 
   private intersectionObserver: IntersectionObserver;
 
@@ -64,6 +64,7 @@ export class QuizComponent implements OnInit {
   private openModal() {
     this.modal_is_opened = true;
   }
+
   private closeModal() {
     this.modal_is_opened = false;
   }
