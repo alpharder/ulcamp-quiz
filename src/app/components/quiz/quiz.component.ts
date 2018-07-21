@@ -65,7 +65,7 @@ export class QuizComponent implements OnInit {
     this.modal_is_opened = true;
   }
 
-  private closeModal() {
+  closeModal() {
     this.modal_is_opened = false;
   }
 
