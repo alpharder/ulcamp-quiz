@@ -12,9 +12,8 @@
 
   <div class="columns is-multiline">
     <div class="column is-one-quarter"
-         *ngFor="let question of listed_questions"
-         [ngClass]="{'is-unanswered': question.selectedAnswer === undefined}">
-      <div class="box buttons">
+         *ngFor="let question of listed_questions">
+      <div class="box buttons" [ngClass]="{'is-unanswered': question.selectedAnswer === undefined}">
         <button class="button is-fullwidth"
                 (click)="selectAnswer(question, answer)"
                 [ngClass]="{'is-primary': answer === question.selectedAnswer}"
