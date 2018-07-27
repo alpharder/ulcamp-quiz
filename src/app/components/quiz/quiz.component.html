@@ -2,10 +2,27 @@
   <article class="message is-info">
     <div class="message-header">
       <p>Personal Styles</p>
+      <div class="dropdown is-right" [ngClass]="{'is-active': langSwitchActive}">
+        <div class="dropdown-trigger" (click)="langSwitchActive = !langSwitchActive">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>{{messages.switch_lang[language]}}</span>
+            <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item" (click)="switchLang(lang.code)" *ngFor="let lang of languages">
+              {{lang.title}}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="message-body content">
-      <p>Which of these statements best describes your personal style at work?</p>
-      <p>In each pair, check one answer.</p>
+      <p>{{messages.p1[language]}}</p>
+      <p>{{messages.p2[language]}}</p>
     </div>
   </article>
 
@@ -16,7 +33,7 @@
         <button class="button is-fullwidth"
                 (click)="selectAnswer(question, answer)"
                 [ngClass]="{'is-primary': answer === question.selectedAnswer}"
-                *ngFor="let answer of question.question.variants">{{answer.text}}
+                *ngFor="let answer of question.question.variants">{{answer.text[language]}}
         </button>
       </div>
     </div>

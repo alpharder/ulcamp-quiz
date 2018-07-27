@@ -19,3 +19,8 @@
   max-height: 600px;
   max-width: 600px;
 }
+
+.quiz .message a.dropdown-item {
+  text-decoration: none;
+  color: black;
+}

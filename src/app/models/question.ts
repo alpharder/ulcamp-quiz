@@ -3,7 +3,7 @@ export const enum QuestionInfluenceType {
 }
 
 export class AnswerVariant {
-  text: string;
+  text: {};
   influence: QuestionInfluenceType;
 }
 

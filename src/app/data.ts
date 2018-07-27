@@ -5,216 +5,216 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: 'More use of hands when talking.',
-        influence: QuestionInfluenceType.B,
-      },
-      {
-        text: 'Less use of hands when talking.',
+        text: {en: 'Less use of hands when talking.', ru: 'Предпочитаю не жестикулировать при разговоре.'},
         influence: QuestionInfluenceType.A,
       },
-    ],
-  },
-  {
-    variants: [
       {
-        text: 'Speaks in a softer tone of voice.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Speaks in a louder tone of voice',
-        influence: QuestionInfluenceType.R,
-      },
-    ],
-  },
-  {
-    variants: [
-      {
-        text: 'Uses many body movements.',
+        text: {en: 'More use of hands when talking.', ru: 'Часто и много жестикулирую при разговоре.'},
         influence: QuestionInfluenceType.B,
       },
-      {
-        text: 'Uses few body movements.',
-        influence: QuestionInfluenceType.A,
-      },
     ],
   },
   {
     variants: [
       {
-        text: 'Speaks and moves at a slower pace.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Speaks and moves at a quicker pace.',
+        text: {en: 'Speaks in a louder tone of voice.', ru: 'Часто разговариваю громко.'},
         influence: QuestionInfluenceType.R,
       },
+      {
+        text: {en: 'Speaks in a softer tone of voice.', ru: 'Разговариваю тихим голосом.'},
+        influence: QuestionInfluenceType.L,
+      },
     ],
   },
   {
     variants: [
       {
-        text: 'Has more animated facial expressions.',
+        text: {en: 'Uses few body movements.', ru: 'Практически не двигаюсь при разговоре.'},
+        influence: QuestionInfluenceType.A,
+      },
+      {
+        text: {en: 'Uses many body movements.', ru: 'Использую язык тела при разговоре.'},
         influence: QuestionInfluenceType.B,
       },
+    ],
+  },
+  {
+    variants: [
       {
-        text: 'Has more subtle facial expressions.',
+        text: {en: 'Speaks and moves at a quicker pace.', ru: 'Говорю и двигаюсь довольно быстро.'},
+        influence: QuestionInfluenceType.R,
+      },
+      {
+        text: {en: 'Speaks and moves at a slower pace.', ru: 'Говорю и двигаюсь довольно медленно.'},
+        influence: QuestionInfluenceType.L,
+      },
+    ],
+  },
+  {
+    variants: [
+      {
+        text: {en: 'Has more subtle facial expressions.', ru: 'Мои выражения лица трудноуловимы.'},
         influence: QuestionInfluenceType.A,
       },
-    ],
-  },
-  {
-    variants: [
       {
-        text: 'Tends to speak less and listen more.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Tends to speak more and listen less.',
-        influence: QuestionInfluenceType.R,
-      },
-    ],
-  },
-  {
-    variants: [
-      {
-        text: 'Appears more outgoing.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Appears more serious.',
-        influence: QuestionInfluenceType.R,
-      },
-    ],
-  },
-  {
-    variants: [
-      {
-        text: 'Leans back when talking.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Leans forward when talking.',
-        influence: QuestionInfluenceType.R,
-      },
-    ],
-  },
-  {
-    variants: [
-      {
-        text: 'Is more structured with time.',
+        text: {en: 'Has more animated facial expressions.', ru: 'У меня всё написано на лице.'},
         influence: QuestionInfluenceType.B,
       },
-      {
-        text: 'Is more flexible with time.',
-        influence: QuestionInfluenceType.A,
-      },
     ],
   },
   {
     variants: [
       {
-        text: 'States opinions and facts more mildly.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'States opinions and facts more strongly.',
+        text: {en: 'Tends to speak more and listen less.', ru: 'Предпочитаю говорить, нежели слушать.'},
         influence: QuestionInfluenceType.R,
       },
+      {
+        text: {en: 'Tends to speak less and listen more.', ru: 'Предпочитаю слушать, нежели говорить.'},
+        influence: QuestionInfluenceType.L,
+      },
     ],
   },
   {
     variants: [
       {
-        text: 'Tends to tell stories and use metaphors.',
+        text: {en: 'Appears more serious.', ru: 'Выгляжу серьёзно.'},
+        influence: QuestionInfluenceType.A,
+      },
+      {
+        text: {en: 'Appears more outgoing.', ru: 'Выгляжу дружелюбно.'},
         influence: QuestionInfluenceType.B,
       },
-      {
-        text: 'Tends to talk about information and tasks.',
-        influence: QuestionInfluenceType.A,
-      },
     ],
   },
   {
     variants: [
       {
-        text: 'Takes more time to make decisions.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Makes decisions quickly.',
+        text: {en: 'Leans forward when talking.', ru: 'Наклоняюсь к собеседнику при разговоре.'},
         influence: QuestionInfluenceType.R,
       },
+      {
+        text: {en: 'Leans back when talking.', ru: 'Откидываюсь на спину при разговоре.'},
+        influence: QuestionInfluenceType.L,
+      },
     ],
   },
   {
     variants: [
       {
-        text: 'Easy to get to know.',
+        text: {en: 'Is more flexible with time.', ru: 'Планирую дела на ходу, люблю гибкий распорядок дня.'},
+        influence: QuestionInfluenceType.A,
+      },
+      {
+        text: {en: 'Is more structured with time.', ru: 'Для меня важно иметь четкое и упорядоченное расписание.'},
         influence: QuestionInfluenceType.B,
       },
-      {
-        text: 'Not as easy to get to know.',
-        influence: QuestionInfluenceType.A,
-      },
     ],
   },
   {
     variants: [
       {
-        text: 'Is more cautious about taking risks.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Takes risks and will move forward without all the answers.',
+        text: {en: 'States opinions and facts more strongly.', ru: 'Уверенно выражаю мнение.'},
         influence: QuestionInfluenceType.R,
       },
+      {
+        text: {en: 'States opinions and facts more mildly.', ru: 'Мягко выражаю мнение.'},
+        influence: QuestionInfluenceType.L,
+      },
     ],
   },
   {
     variants: [
       {
-        text: 'Decides more often based on feelings.',
+        text: {en: 'Tends to talk about information and tasks.', ru: 'Предпочитаю обсуждать непосредственно работу.'},
+        influence: QuestionInfluenceType.A,
+      },
+      {
+        text: {en: 'Tends to tell stories and use metaphors.', ru: 'Люблю рассказывать истории.'},
         influence: QuestionInfluenceType.B,
       },
-      {
-        text: 'Decides more often based on facts and logic.',
-        influence: QuestionInfluenceType.A,
-      },
     ],
   },
   {
     variants: [
       {
-        text: 'Does not pressure others for answers.',
-        influence: QuestionInfluenceType.L,
-      },
-      {
-        text: 'Likes to get answers quickly.',
+        text: {en: 'Makes decisions quickly.', ru: 'Я склонен быстро принимать решения.'},
         influence: QuestionInfluenceType.R,
       },
+      {
+        text: {en: 'Takes more time to make decisions.', ru: 'Мне нужно время, чтобы принять решение.'},
+        influence: QuestionInfluenceType.L,
+      },
     ],
   },
   {
     variants: [
       {
-        text: 'Tends to be more social.',
+        text: {en: 'Not as easy to get to know.', ru: 'Меня не так легко узнать поближе.'},
+        influence: QuestionInfluenceType.A,
+      },
+      {
+        text: {en: 'Easy to get to know.', ru: 'Меня легко узнать поближе.'},
         influence: QuestionInfluenceType.B,
       },
+    ],
+  },
+  {
+    variants: [
       {
-        text: 'Prefers to spend time alone.',
-        influence: QuestionInfluenceType.A,
+        text: {en: 'Takes risks and will move forward without all the answers.', ru: 'Рискую и легко двигаюсь дальше.'},
+        influence: QuestionInfluenceType.R,
+      },
+      {
+        text: {en: 'Is more cautious about taking risks.', ru: 'Осторожно отношусь к риску.'},
+        influence: QuestionInfluenceType.L,
       },
     ],
   },
   {
     variants: [
       {
-        text: 'Makes less direct eye contact.',
-        influence: QuestionInfluenceType.L,
+        text: {en: 'Decides more often based on facts and logic.', ru: 'Принимаю решения, основываясь на фактах и логике.'},
+        influence: QuestionInfluenceType.A,
       },
       {
-        text: 'Makes more direct eye contact.',
+        text: {en: 'Decides more often based on feelings.', ru: 'Принимаю решения, руководствуясь на чувствах и эмоциях.'},
+        influence: QuestionInfluenceType.B,
+      },
+    ],
+  },
+  {
+    variants: [
+      {
+        text: {en: 'Likes to get answers quickly.', ru: 'Предпочитаю получать ответы быстро.'},
         influence: QuestionInfluenceType.R,
+      },
+      {
+        text: {en: 'Does not pressure others for answers.', ru: 'Не давлю на других.'},
+        influence: QuestionInfluenceType.L,
+      },
+    ],
+  },
+  {
+    variants: [
+      {
+        text: {en: 'Prefers to spend time alone.', ru: 'Предпочитаю проводить время в одиночестве.'},
+        influence: QuestionInfluenceType.A,
+      },
+      {
+        text: {en: 'Tends to be more social.', ru: 'Тянусь к общению, коллективу.'},
+        influence: QuestionInfluenceType.B,
+      },
+    ],
+  },
+  {
+    variants: [
+      {
+        text: {en: 'Makes more direct eye contact.', ru: 'Смотрю собеседнику в глаза.'},
+        influence: QuestionInfluenceType.R,
+      },
+      {
+        text: {en: 'Makes less direct eye contact.', ru: 'Избегаю зрительного контакта.'},
+        influence: QuestionInfluenceType.L,
       },
     ],
   },

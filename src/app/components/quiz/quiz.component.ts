@@ -16,6 +16,26 @@ export class QuizComponent implements OnInit {
   modal_is_opened = false;
   result?: QuizResultImmutable;
 
+  language = 'en';
+  languages = [{code: 'en', title: 'English'}, {code: 'ru', title: 'Русский'}];
+
+  langSwitchActive = false;
+
+  messages = {
+    switch_lang: {
+      ru: 'Language',
+      en: 'Язык',
+    },
+    p1: {
+      en: 'Which of these statements best describes your personal style at work?',
+      ru: 'Какие из этих утверждений лучше всего описывают ваше поведение на работе?',
+    },
+    p2: {
+      en: 'In each pair, check one answer.',
+      ru: 'Выберите один ответ в каждой паре.',
+    }
+  };
+
   private intersectionObserver: IntersectionObserver;
 
   constructor() {
@@ -47,6 +67,12 @@ export class QuizComponent implements OnInit {
     this.updateAnsweredQuestionCnt();
     this.updateCompletionPercentage();
     this.updateResult();
+  }
+
+  switchLang(langCode) {
+    this.langSwitchActive = false;
+    this.language = langCode;
+    return false;
   }
 
   showResults() {
