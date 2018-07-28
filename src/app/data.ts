@@ -5,11 +5,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Less use of hands when talking.', ru: 'Предпочитаю не жестикулировать при разговоре.'},
+        text: {en: 'You seldom use your hands when you speak', ru: 'Предпочитаю не жестикулировать при разговоре.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'More use of hands when talking.', ru: 'Часто и много жестикулирую при разговоре.'},
+        text: {en: 'You use your hands a lot when you speak.', ru: 'Часто и много жестикулирую при разговоре.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -17,11 +17,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Speaks in a louder tone of voice.', ru: 'Часто разговариваю громко.'},
+        text: {en: 'You speak in a louder manner.', ru: 'Часто разговариваю громко.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Speaks in a softer tone of voice.', ru: 'Разговариваю тихим голосом.'},
+        text: {en: 'You speak with a quieter or slower manner.', ru: 'Разговариваю тихим голосом.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -29,11 +29,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Uses few body movements.', ru: 'Практически не двигаюсь при разговоре.'},
+        text: {en: 'You use minimal body or gestures movements', ru: 'Практически не двигаюсь при разговоре.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Uses many body movements.', ru: 'Использую язык тела при разговоре.'},
+        text: {en: 'You use many body gestures or movements.', ru: 'Использую язык тела при разговоре.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -41,11 +41,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Speaks and moves at a quicker pace.', ru: 'Говорю и двигаюсь довольно быстро.'},
+        text: {en: 'Your speech and movements are usually at a faster pace.', ru: 'Говорю и двигаюсь довольно быстро.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Speaks and moves at a slower pace.', ru: 'Говорю и двигаюсь довольно медленно.'},
+        text: {en: 'Your speech and movements tend to be at a slower pace.', ru: 'Говорю и двигаюсь довольно медленно.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -53,11 +53,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Has more subtle facial expressions.', ru: 'Мои выражения лица трудноуловимы.'},
+        text: {en: 'Your face uses few animated expressions.', ru: 'Мои выражения лица трудноуловимы.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Has more animated facial expressions.', ru: 'У меня всё написано на лице.'},
+        text: {en: 'Your face uses more animated expressions.', ru: 'У меня всё написано на лице.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -65,11 +65,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Tends to speak more and listen less.', ru: 'Предпочитаю говорить, нежели слушать.'},
+        text: {en: 'You like speaking more than listening.', ru: 'Предпочитаю говорить, нежели слушать.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Tends to speak less and listen more.', ru: 'Предпочитаю слушать, нежели говорить.'},
+        text: {en: 'You like to listen more than you speak.', ru: 'Предпочитаю слушать, нежели говорить.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -77,11 +77,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Appears more serious.', ru: 'Выгляжу серьёзно.'},
+        text: {en: 'You are more serious and concentrated.', ru: 'Выгляжу серьёзно.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Appears more outgoing.', ru: 'Выгляжу дружелюбно.'},
+        text: {en: 'You are more outgoing and lively.', ru: 'Выгляжу дружелюбно.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -89,11 +89,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Leans forward when talking.', ru: 'Наклоняюсь к собеседнику при разговоре.'},
+        text: {en: 'You often lean forward when speaking with someone.', ru: 'Наклоняюсь к собеседнику при разговоре.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Leans back when talking.', ru: 'Откидываюсь на спину при разговоре.'},
+        text: {en: 'You often lean back when speaking with someone.', ru: 'Откидываюсь на спину при разговоре.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -101,11 +101,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Is more flexible with time.', ru: 'Планирую дела на ходу, люблю гибкий распорядок дня.'},
+        text: {en: 'You are quite flexible with your time.', ru: 'Планирую дела на ходу, люблю гибкий распорядок дня.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Is more structured with time.', ru: 'Для меня важно иметь четкое и упорядоченное расписание.'},
+        text: {en: 'You are rigid and structured with your time.', ru: 'Для меня важно иметь четкое и упорядоченное расписание.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -113,11 +113,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'States opinions and facts more strongly.', ru: 'Уверенно выражаю мнение.'},
+        text: {en: 'You strongly give your opinions.', ru: 'Уверенно выражаю мнение.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'States opinions and facts more mildly.', ru: 'Мягко выражаю мнение.'},
+        text: {en: 'You tend to give your opinions more mildly', ru: 'Мягко выражаю мнение.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -125,11 +125,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Tends to talk about information and tasks.', ru: 'Предпочитаю обсуждать непосредственно работу.'},
+        text: {en: 'You would rather speak about information and objectives.', ru: 'Предпочитаю обсуждать непосредственно работу.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Tends to tell stories and use metaphors.', ru: 'Люблю рассказывать истории.'},
+        text: {en: 'You prefer to tell stories and use metaphors in your speech.', ru: 'Люблю рассказывать истории.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -137,11 +137,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Makes decisions quickly.', ru: 'Я склонен быстро принимать решения.'},
+        text: {en: 'You trust your instinct and decide quickly.', ru: 'Я склонен быстро принимать решения.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Takes more time to make decisions.', ru: 'Мне нужно время, чтобы принять решение.'},
+        text: {en: 'You would be more comfortable spending a lot of time to make a decision.', ru: 'Мне нужно время, чтобы принять решение.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -149,11 +149,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Not as easy to get to know.', ru: 'Меня не так легко узнать поближе.'},
+        text: {en: 'It takes a long time for people to get to know you better.', ru: 'Меня не так легко узнать поближе.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Easy to get to know.', ru: 'Меня легко узнать поближе.'},
+        text: {en: 'It is easy for people to meet and learn more about you.', ru: 'Меня легко узнать поближе.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -161,11 +161,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Takes risks and will move forward without all the answers.', ru: 'Рискую и легко двигаюсь дальше.'},
+        text: {en: 'You are willing to take risks and proceed without all the information.', ru: 'Рискую и легко двигаюсь дальше.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Is more cautious about taking risks.', ru: 'Осторожно отношусь к риску.'},
+        text: {en: 'You are more cautious and like to minimize risks.', ru: 'Осторожно отношусь к риску.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -173,11 +173,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Decides more often based on facts and logic.', ru: 'Принимаю решения, основываясь на фактах и логике.'},
+        text: {en: 'You rely on facts and logic when deciding.', ru: 'Принимаю решения, основываясь на фактах и логике.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Decides more often based on feelings.', ru: 'Принимаю решения, руководствуясь на чувствах и эмоциях.'},
+        text: {en: 'You use your inner feelings and instincts when deciding.', ru: 'Принимаю решения, руководствуясь на чувствах и эмоциях.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -185,11 +185,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Likes to get answers quickly.', ru: 'Предпочитаю получать ответы быстро.'},
+        text: {en: 'You prefer to get answers quickly by any means.', ru: 'Предпочитаю получать ответы быстро.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Does not pressure others for answers.', ru: 'Не давлю на других.'},
+        text: {en: 'You do not like to put pressure on others for quick answers.', ru: 'Не давлю на других.'},
         influence: QuestionInfluenceType.L,
       },
     ],
@@ -197,11 +197,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Prefers to spend time alone.', ru: 'Предпочитаю проводить время в одиночестве.'},
+        text: {en: 'You prefer to be alone.', ru: 'Предпочитаю проводить время в одиночестве.'},
         influence: QuestionInfluenceType.A,
       },
       {
-        text: {en: 'Tends to be more social.', ru: 'Тянусь к общению, коллективу.'},
+        text: {en: 'You are very social.', ru: 'Тянусь к общению, коллективу.'},
         influence: QuestionInfluenceType.B,
       },
     ],
@@ -209,11 +209,11 @@ export const QUESTION_LIST: Question[] = [
   {
     variants: [
       {
-        text: {en: 'Makes more direct eye contact.', ru: 'Смотрю собеседнику в глаза.'},
+        text: {en: 'You find it easy to keep direct eye contact.', ru: 'Смотрю собеседнику в глаза.'},
         influence: QuestionInfluenceType.R,
       },
       {
-        text: {en: 'Makes less direct eye contact.', ru: 'Избегаю зрительного контакта.'},
+        text: {en: 'You do not make eye contact often.', ru: 'Избегаю зрительного контакта.'},
         influence: QuestionInfluenceType.L,
       },
     ],
