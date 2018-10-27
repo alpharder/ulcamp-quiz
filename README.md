@@ -2,6 +2,8 @@
 
 A simple test that helps you identify yourself among David Merrill's & Roger Reid's social styles.
 
+![Preview](./scr.png)
+
 Consists of two components – check em out [here](src/app/components).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
